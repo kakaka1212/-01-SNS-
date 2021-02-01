@@ -1,0 +1,106 @@
+drop table userdata;
+
+create table userdata(
+userId varchar(10) primary key,
+password varchar(20) not null,
+name varchar(30) unique,
+self varchar(200),
+startMn date
+)default charset='utf8';
+
+insert into userdata (userId, password, name, self, startMn) 
+values ('@kousei', '1234', 'kousei hata', 'よろしくお願いします。', '2020-10-10');
+
+insert into userdata (userId, password, name, self, startMn)
+values ('@naoko', '1234', 'naoko sakai', 'よろしくお願いします。', '2020-01-03');
+
+insert into userdata (userId, password, name, self, startMn)
+values ('@tarou', '1234', 'tarou yamada', 'よろしくお願いします。', '2020-05-10');
+
+insert into userdata (userId, password, name, self, startMn) 
+values ('@kei', '1234', 'kei ishi', 'よろしくお願いします。', '2020-10-15');
+
+/* ツイートデータ */
+drop table twdata; 
+
+create table twdata(
+userId varchar(50) not null,
+tweet varchar(50) not null,
+tmStamp varchar(30) not null
+)default charset="utf8";
+
+/* フォローズ */
+drop table follows;
+
+create table follows(
+userId varchar(50) not null,
+followId varchar(50) not null,
+followTime datetime not null default current_timestamp
+)default charset="utf8";
+
+insert into follows (userId, followId) 
+values ('@kousei', '@kei');
+
+insert into follows (userId, followId) 
+values ('@kousei', '@naoko');
+
+insert into follows (userId, followId) 
+values ('@kousei', '@tarou');
+
+insert into follows (userId, followId) 
+values ('@kei', '@kousei');
+
+insert into follows (userId, followId) 
+values ('@kei', '@tarou');
+
+insert into follows (userId, followId) 
+values ('@tarou', '@naoko');
+
+insert into follows (userId, followId) 
+values ('@naoko', '@kei');
+
+
+
+/* カウント */
+select count(followId) from follows where userId='@kousei';
+select count(userId) from follows where followId='@kousei';
+
+/* dmテーブル */
+drop table dmdata;
+
+create table dmdata(
+userId varchar(50) not null,
+addressId varchar(50) not null,
+msg varchar(200) not null,
+msgTime datetime not null default current_timestamp
+)default charset="utf8";
+
+insert into dmdata(userId,addressId,msg,msgTime) 
+values('@kousei', '@kei', 'おはよう！', '2020-10-27 09:48:50');
+
+insert into dmdata(userId,addressId,msg,msgTime) 
+values('@kei', '@kousei', 'おはようございます！', '2020-10-27 09:50:50');
+
+insert into dmdata(userId,addressId,msg,msgTime) 
+values('@kousei', '@kei', 'いい天気ですね', '2020-10-27 09:52:50');
+
+insert into dmdata(userId,addressId,msg,msgTime) 
+values('@kei', '@kousei', 'そうですね', '2020-10-27 09:54:50');
+
+
+/*いいね*/
+create table likedata(
+userId varchar(50) not null,
+likeId varchar(50) not null,
+tweet varchar(50) not null,
+tmStamp varchar(30) not null
+)default charset="utf8";
+
+insert into likedata(userId,likeId,tweet,tmStamp) 
+values('@kousei', '@ppppp', 'PPPPP', '2020/10/26 13:58:19');
+
+
+
+
+
+
