@@ -1,5 +1,5 @@
 
-# 未来share （開発中）
+# 作品名『未来share』 （開発中）
 これまでのSNSは現在や過去とつながることはできても、
 
 未来とつながることはできませんでした。 
@@ -37,7 +37,7 @@
 2 Eclipseのworkspaceにtwittoファイル保存後、eclipseにファイルを認識
 3 xamppのmysqlを起動後、cmdにてデータベースを新規作成し、database内にあるテキストデータを入力。
 4 Eclipse上でサーバー起動
-5 ブラウザにてlocalhostheへ接続
+5 ブラウザにてlocalhostへ接続
 ```
 注意事項を確認してから実行に移してください。
  
