@@ -1,60 +1,55 @@
 
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
+# 未来share （開発中）
+これまでのSNSは現在や過去とつながることはできても、
+
+未来とつながることはできませんでした。 
+
+自分の目標やゴール、誰かの将来、世の中のこれから、あらゆる未来をshareしましょう！
+
+未来に発信し、未来とつながるSNSです。
+
+# デモ画面
  
-分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
+* トップ画面
+* メッセージ一覧
+* トーク画面
+* アカウント画面
  
-"hoge"が何かを簡潔に紹介する
+# 特長、使用技術
  
-# DEMO
+今作品は学習用となっているため、ソースコードはほぼスクラッチで記述しています。
+
+* html
+* css
+* javascript
+* Java
+* sql
  
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
+# 必要なライブラリ
  
-# Features
+* Eclipse
+* xampp(mysql)
  
-"hoge"のセールスポイントや差別化などを説明する
- 
-# Requirement
- 
-"hoge"を動かすのに必要なライブラリなどを列挙する
- 
-* huga 3.5.2
-* hogehuga 1.0.2
- 
-# Installation
- 
-Requirementで列挙したライブラリなどのインストール方法を説明する
+# デモの実行方法
  
 ```bash
-pip install huga_package
+1 Elipse,xamppともにホームページからダウンロード
+2 Eclipseのworkspaceにtwittoファイル保存後、eclipseにファイルを認識
+3 xamppのmysqlを起動後、cmdにてデータベースを新規作成し、database内にあるテキストデータを入力。
+4 Eclipse上でサーバー起動
+5 ブラウザにてlocalhostheへ接続
 ```
+注意事項を確認してから実行に移してください。
  
-# Usage
+# 注意事項
  
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
+* 作成するデータベースの名前のは『sample01』にしてください。
  
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
- 
-# Note
- 
-注意点などがあれば書く
- 
-# Author
- 
-作成情報を列挙する
- 
+# 作成者情報
+
 * 作成者
+   畑　宏征
 * 所属
+   HAL東京　高度情報学科　3年
 * E-mail
- 
-# License
-ライセンスを明示する
- 
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
- 
-社内向けなら社外秘であることを明示してる
- 
-"hoge" is Confidential.
+   hatakousei1234@gmail.com
