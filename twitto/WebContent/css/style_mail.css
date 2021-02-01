@@ -1,0 +1,305 @@
+@charset "UTF-8";
+html{
+	height: 100%;
+}
+body{
+	font-family: "游ゴシック", "Yu Gothic";
+	font-weight: 500;
+	height: 100%;
+}
+:focus{
+	outline: 0;
+}
+
+/*サイドメニュー画面*/
+.menu{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 26%;
+    height: 100%;
+    display: block;
+    padding: 0.3em 4em;
+    font-size: 1.25em;
+    border-right: solid 0.08em #aac5de;
+}
+.homeBtn{
+    width: 3em;
+    height: 3em;
+    border-radius: 2em;
+    margin-top: 0.8em;
+    margin-left: 2.2em;
+}
+.menu .home {
+    height: 4em;
+    padding: 0;
+}
+.home img {
+    height: 2em;
+    width: 2em;
+    border-radius: 0;
+}
+
+.menu p{
+    width: 9em;
+    height: 3em;
+    margin: 0;
+    padding-left: 0.3em;
+    overflow: hidden;
+}
+.menu p :hover{
+	border-radius: 1.5em;
+	background-color: #c6e4ff;
+}
+
+.menu a{
+	display: block;
+    color: #000;
+    text-decoration: none;
+    height: 3em;
+    margin: 0;
+    padding: 0.5em;
+    font-weight: bold;
+}
+.menu a:hover{
+	color: #5989cf;
+}
+.menu span{
+	font-size: 0.9em;
+	margin-top: 0.2em;
+	margin-left: 0.2em;
+}
+.menuImg{
+	width: 1.5em;
+	height: 1.5em;
+}
+
+/*メール全体*/
+.mail_all{
+	width: 48%;
+	margin: 0 auto;
+	height: 90%;
+	border-right: solid 0.1em #aac5de;
+}
+.add_name{
+	height: 15%;
+	min-height: 3em
+}
+.scroll{
+	height: 85%;
+	width: 100%;
+	overflow: none;
+	position: relative;
+	margin: 0 0.5em;
+}
+.mail_disp{
+	max-height: 100%;
+	width: 100%;
+	overflow:auto;
+	position: absolute;
+	bottom: 0;
+}
+p#text{
+	font-size: 0.9em;
+    margin: 0.5em;
+    text-align: left;
+    word-wrap: break-word;
+}
+p#time{
+	font-size: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.1em;
+    text-align: right;
+}
+
+.mail_inline{
+	margin-bottom: 0.3em;
+}
+.mail_inline.me {
+    text-align: right;
+    margin-right: 1em;
+}
+.mail_list{
+    min-width: 7em;
+    max-width: 40%;
+    display: inline-block;
+	font-weight: 800;
+}
+.mail_list.me{
+	border: solid 0.15em #6bb9ff;
+	background-color: #c6e4ff;
+	border-radius: 0.5em 0.5em 0 0.5em;
+}
+.mail_list.other{
+	border: solid 0.15em rgb(0, 0, 0, 0.5);
+	background-color: rgb(0, 0, 0, 0.2);
+	border-radius: 0.5em 0.5em 0.5em 0;
+}
+
+/*宛先*/
+.add_name{
+	height: 15%;
+    min-height: 4em;
+    border-bottom: solid 0.1em #aac5de;
+}
+
+.add_wa {
+    display: inline-flex;
+    height: 100%;
+    margin: 0.5em;
+}
+
+.add_image {
+    width: 3em;
+    height: 3em;
+}
+
+.add_image img {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+span#nm{
+	display: block;
+}
+
+span#userId{
+	display: block;
+}
+
+/*入力欄*/
+.mail_in{
+    height: 10%;
+    min-height: 3em;
+    width: 48%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    border-right: solid 0.1em #aac5de;
+}
+
+.in_in{
+	width: 90%;
+	height: 95%;
+	margin: 0 auto;
+}
+
+.mail_in form {
+    height: 100%;
+    width: 100%;
+    border-top: solid 0.15em #aac5de;
+    border-bottom: solid 0.15em #aac5de;
+    display: inline-flex;
+}
+
+.mail_in input[type="text"] {
+    width: 85%;
+    height: 70%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: solid 0.12em #aac5de;
+    position: relative;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.mail_in input[type="image"] {
+    width: 2em;
+    height: 2em;
+    transform: rotateZ(90deg);
+    margin: auto 0;
+    filter: invert(8%) sepia(99%) saturate(7044%) hue-rotate(247deg) brightness(100%) contrast(145%);
+	opacity: 0.4;
+}
+
+/*フォロー一覧*/
+.fl_all{
+	width: 23%;
+    height: 15em;
+    overflow: auto;
+    position: fixed;
+    top: 0.5em;
+    right: 1em;
+    border-radius: 1em;
+    background-color: rgb(220, 220, 220, 0.5);
+}
+.fl_all2 {
+    width: 23%;
+    height: 15em;
+    position: fixed;
+    top: 17em;
+    right: 1em;
+    border-radius: 1em;
+    background-color: rgb(220, 220, 220, 0.5);
+}
+.fl_title {
+    height: 3em;
+    border-bottom: solid 0.14em rgb(0, 0, 0, 0.2);
+}
+.fl_title span {
+    font-size: 1.4em;
+    margin-left: 0.3em;
+    line-height: 2em;
+}
+.lists{
+	overflow: auto;
+	height: 11em;
+}
+.lists::-webkit-scrollbar {
+    display:none;
+}
+.fl_list{
+	width: 100%;
+	border-bottom: solid 0.14em rgb(0, 0, 0, 0.2);
+}
+
+.fl_list:hover{
+	background-color: #c6e4ff;
+	color: #5989cf;
+}
+.fl_list:hover span{
+	color: #5989cf;
+}
+.fl_list a{
+	text-decoration: none;
+}
+
+.fl_top {
+    display: inline-flex;
+    width: 100%;
+}
+
+.fl_img {
+    margin: 0 0.5em;
+}
+
+.fl_img img{
+	width: 2.5em;
+	height: 2.5em;
+	margin-top: 0.4em;
+}
+.fl_right {
+    width: 100%;
+}
+/* 名前関連 */
+.fl_top2 {
+    display: inline-flex;
+    width: 100%;
+    height: 3em;
+    color: #000;
+}
+
+.fl_top2 span {
+    display: block;
+}
+
+.fl_top2 span#name{
+    font-size: 1.2em;
+}
+
